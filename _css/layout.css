@@ -1,0 +1,640 @@
+#dockedHeader {
+    background-color: rgba(21,59,87,1.0);
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 998;
+    min-height: 500px;
+}
+
+header {
+    background-color: rgba(21,59,87,1.0);
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 998;
+    min-height: 500px;
+}
+
+header nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 35%;
+    width: 100%;
+    background-color: rgba(21,59,87,1.0);
+}
+
+header ul {
+    display: block;
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    background-color: rgba(21,59,87,1.0);
+}
+
+header ul li {
+    background-color: rgba(21,59,87,1.0);
+    padding: 5px 0px;
+}
+
+header ul li a {
+    background-color: rgba(21,59,87,1.0);
+}
+
+header ul li a i, nav ul li a i {
+    background-color: rgba(21,59,87,1.0);
+    display: inline;
+    color: rgba(158, 222, 238, 0.445);
+}
+
+header li b {
+	display: none;
+	font-family: "Arial Narrow", Helvetica, sans-serif;
+	font-size: 8pt;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 7px 0px;
+	vertical-align: middle;
+	text-decoration: none;
+	background-color: rgba(21,59,87,1.0);
+}
+
+nav li b {
+	display: none;
+	font-family: "Arial Narrow", Helvetica, sans-serif;
+	font-size: 8pt;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 8px 0px;
+	vertical-align: middle;
+	text-decoration: none;
+	background-color: rgba(21,59,87,1.0);
+}
+
+nav li b a, header li b a {
+	text-decoration: none;
+}
+
+nav ul {
+    width: 100%;
+    height: auto;
+}
+
+nav ul li {
+    background-color: rgba(21,59,87,1.0);
+    padding: 10px 0px;
+    vertical-align: center;
+}
+
+nav ul li a {
+    background-color: rgba(21,59,87,1.0);
+    padding: 2px 0px;
+    vertical-align: center;
+}
+
+nav a:hover i, header a:hover i {
+	display: none;
+}
+
+nav a:hover b, ul a:hover b {
+	display: block;
+	-webkit-transition: display 0.4s ease-in;
+  	-moz-transition: display 0.4s ease-in;
+ 	-o-transition: display 0.4s ease-in;
+  	transition: display 0.4s ease-in;
+}
+
+/* EnTerActive Studios Logo styling */
+
+#logo, #logoImage {
+    background-color: transparent;
+}
+
+#logo {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 115%;
+	-moz-opacity: 0.8;
+	-o-opacity: 0.8;
+	opacity: 0.8;
+}
+
+#logo p img {
+    background-color: transparent;
+    width: 175%;
+}
+
+img.logoImageGlow {
+    box-shadow: 0px 0px 100px rgba(255,255,255,0.9), 0px 0px 100px inset rgba(255,255,255,0.9);
+}
+
+/* left side div */
+
+#imageBackground {
+    width: 50vw;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    background: url("../_images/bkPortrait_1447x1440.jpg");
+    background-size: cover;
+    z-index: 0;
+    -webkit-animation: 2s ease left 1 fadein;
+    animation: 2s ease forwards 1 fadein;
+}
+
+#contactBackground {
+    width: 50vw;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    background: url("../_images/bkPencils_3024x3024.jpg");
+    background-size: cover;
+    z-index: 0;
+    -webkit-animation: 2s ease left 1 fadein;
+    animation: 2s ease forwards 1 fadein;
+}
+
+#portfolio {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    background-color: rgba(22,22,22,1.0);
+}
+
+/* Behance.net widget */
+
+#portfolioBackground {
+    width: 95.7%;
+	width: 95.7vw;
+    height: auto;
+    overflow: auto;
+    position: relative;
+    top: 0;
+    left: 3%;
+    z-index: 0;
+	padding: 20px 30px 20px 40px;
+    -webkit-animation: 2s ease left 1 fadein;
+    animation: 2s ease forwards 1 fadein;
+	background: rgba(22,22,22,1.0);
+}
+
+/* Instagram widget */
+
+#aboutBackground {
+	margin-left: 35px;
+    width: 47.5vw;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    margin-left: 50px;
+    z-index: 0;
+    -webkit-animation: 2s ease left 1 fadein;
+    animation: 2s ease forwards 1 fadein;
+}
+
+#resumeBackground {
+    width: 50vw;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    background: url("../_images/bkAbout1440x1440.jpg");
+    background-size: cover;
+    z-index: 0;
+    -webkit-animation: 2s ease left 1 fadein;
+    animation: 2s ease forwards 1 fadein;
+}
+
+/* Twitter Feed & Pricing/Rates DIV's */
+
+#twitterFeed {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    width: 45%;
+	opacity: 0.95;
+    height: auto;
+}
+
+#twitterImage, #ratesButtonImage {
+    position: absolute;
+    display: block;
+	background: transparent;
+}
+
+#twitterImage:hover, #ratesButtonImage:hover {
+    cursor: pointer;
+}
+
+#twitterContent {
+    border: 3px solid rgba(255,255,255,1.0);
+    margin-right: 10px;
+    display: none;
+}
+
+#ratesButton {
+	background-color: rgba(33,33,32,1.0);
+	position: absolute;
+	top: 0;
+	left: 5%;
+	width: 40%;
+	opacity: 0.95;
+	height: auto;
+	overflow: auto;
+	margin-top: -10px;
+}
+
+#ratesButtonContent {
+	border: 3px solid rgba(255,255,255,1.0);
+	display: block;
+	width: 42%;
+	width: 42vw;
+	height: 50%;
+	height: 50vh;
+	overflow: hidden scroll;
+}
+
+/* background slide/right-side div */
+
+#backdrop {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+}
+
+#backgroundSlide {
+    width: 50vw;
+    height: 100vh;
+    max-width: 50vw;
+    max-height: 100vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: auto;
+    vertical-align: center;
+    z-index: 500;
+	background: rgba(11,11,10,1.0);
+    -moz-transform:translateX(0px);
+    -ms-transform:translateX(0px);
+    -o-transform:translateX(0px);
+    -webkit-transform:translateX(0px);
+    transform:translateX(0px);
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#mainHeading {
+    animation: 1.5s ease forwards 1 fadein;
+    -webkit-animation: 1.5s ease forwards 1 fadein;
+    margin-left: 12%;
+    vertical-align: center;
+}
+
+#skillsShow {
+    animation: 2s ease forwards 1 fadein;
+    -webkit-animation: 2s ease forwards 1 fadein;
+    margin-left: 12%;
+    vertical-align: center;
+}
+
+#skillsResume {
+    animation: 2.4s ease forwards 1 fadein;
+    -webkit-animation: 2.4s ease forwards 1 fadein;
+    margin-left: 12%;
+    vertical-align: center;
+}
+
+#resumeHead1, #resumeHead2 {
+	margin-left: 5%;
+	vertical-align: center;
+}
+
+#workExperience {
+    animation: 2.7s ease forwards 1 fadein;
+    -webkit-animation: 2.7s ease forwards 1 fadein;
+    margin-left: 12%;
+    vertical-align: center;
+}
+
+#contactInfo, #footerTxt {
+    animation: 3s ease forwards 1 fadein;
+    -webkit-animation: 3s ease forwards 1 fadein;
+    margin-left: 12%;
+    vertical-align: center;
+}
+
+@keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes ease-in {
+	0% { opacity:0; }
+	66% { opacity: 0.5; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes ease-in {
+	0% { opacity:0; }
+	66% { opacity: 0.5; }
+	100% { opacity: 1; }
+}
+
+.resumeHR {
+    color: rgba(49,116,170,1.0);
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(49,116,170,0.75), rgba(0,0,0,0));
+    margin-left: 5%;
+}
+
+table {
+    margin: 0 5%;
+}
+
+#oneH1 {
+    margin-top: 11%;
+}
+
+h1 {
+    margin-top: 4%;
+	opacity: 1.0;
+}
+
+h3 {
+    margin-left: 5em;
+	opacity: 1.0;
+}
+
+h3:last-of-type {
+    margin-bottom: 8%;
+	opacity: 1.0;
+}
+
+h5 {
+    margin-bottom: 5%;
+	line-height: 1.3;
+	opacity: 1.0;
+}
+
+.greenH1 {
+    font-family: Raleway, sans-serif;
+    font-size: 3.5em;
+    font-size: 3.5vw;
+    color: rgba(21,190,143,1.0);
+    line-height: 1.3;
+    text-decoration: 100;
+}
+
+.whiteH3 {
+    font-family: Raleway, sans-serif;
+    font-size: 2.5em;
+    font-size: 2.5vw;
+    color: rgba(255,255,255,1.0);
+    line-height: 1.3;
+    text-decoration: 600;
+}
+
+.blueH3 {
+    font-family: Raleway, sans-serif;
+    font-size: 2.5em;
+    font-size: 2.5vw;
+    color: rgba(49,116,170,1.0);
+    line-height: 1.3;
+    text-decoration: 300;
+}
+
+.greenH3 {
+    font-family: Raleway, sans-serif;
+    font-size: 2.5em;
+    font-size: 2.5vw;
+    color: rgba(21,190,143,1.0);
+    line-height: 1.3;
+    text-decoration: 600;
+}
+
+.whiteH5 {
+    font-family: Raleway, sans-serif;
+    font-size: 1.7em;
+    font-size: 1.7vw;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.3;
+    text-decoration: 400;
+}
+
+.pinkH5 {
+    font-family: Raleway, sans-serif;
+    font-size: 1.7em;
+    font-size: 1.7vw;
+    color: rgba(249,116,170,1.0);
+    line-height: 1.3;
+    text-decoration: 400;
+}
+
+.greenH5 {
+    font-family: Raleway, sans-serif;
+    font-size: 1.7em;
+    font-size: 1.7vw;
+    color: rgba(21,190,143,1.0);
+    line-height: 1.3;
+    text-decoration: 400;
+}
+
+.blueH5 {
+    font-family: Raleway, sans-serif;
+    font-size: 1.7em;
+    font-size: 1.7vw;
+    color: rgba(17,52,207,1.0);
+    line-height: 1.3;
+    text-decoration: 400;
+}
+
+.redH5 {
+    font-family: Raleway, sans-serif;
+    font-size: 1.7em;
+    font-size: 1.7vw;
+    color: rgba(190,21,35,1.0);
+    line-height: 1.3;
+    text-decoration: 400;
+}
+
+.rightH5 {
+    text-align: right;
+}
+
+.whiteListH5 {
+	font-family: Raleway, sans-serif;
+    font-size: 0.8em;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.8);
+    line-height: 1;
+    text-decoration: 200;
+}
+
+.ratesLIH5desc {
+	
+}
+
+.ratesH3 {
+	font-family: Raleway, sans-serif;
+    font-size: 1.5em;
+    font-size: 1.5vw;
+    color: rgba(21,190,143,1.0);
+    line-height: 1.1em;
+    text-decoration: 600;
+}
+
+h1.id {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45em;
+    font-size: 45vw;
+    color: rgba(255,255,255,0.15);
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    text-decoration: 600;
+    padding: 10px;
+}
+
+.whiteH5resume {
+    font-family: Raleway, sans-serif;
+    font-size: 1.2em;
+    font-size: 1.2vw;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.1;
+    text-decoration: 200;
+    margin: 0 5% 10px 5%;
+}
+
+.whiteH5contact {
+    font-family: Raleway, sans-serif;
+    font-size: 1.7em;
+    font-size: 1.7vw;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.1;
+    text-decoration: 400;
+    margin: 0 0 1% 5%;
+}
+
+.whiteH5contact:last-of-type {
+    margin-bottom: 40px;
+}
+
+.whiteH5table {
+    font-family: Raleway, sans-serif;
+    font-size: 1.2em;
+    font-size: 1.2vw;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.1;
+    text-decoration: 200;
+}
+
+.whiteH5resume a, .whiteH5 a {
+    text-decoration: underline;
+}
+
+#reverse {
+    unicode-bidi: bidi-override; 
+    direction: rtl;
+}
+
+.eb-pagination-button > span {
+    background-color: #2183ee;
+}
+.moveH5 {
+	margin: 0 5%;
+}
+
+.formH5 {
+	margin: 3% 5%;
+}
+
+.form2H5 {
+	width: 95%;
+}
+
+/* form elements */
+
+form {
+	width: 100%;
+	-moz-opacity: 1.0;
+	-o-opacity: 1.0;
+	opacity: 1.0;
+}
+
+label {
+	clear: left;
+	float: left;
+	width: 35%;
+	text-align: right;
+	margin-right: 3%;
+}
+
+#formButtons {
+	clear: left;
+	margin-left: 5%;
+}
+
+input[type="submit"], input[type="reset"] {
+	background-color: rgba(21,190,143,1.0); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+	font-family: Raleway, sans-serif;
+    font-size: 16px;
+	text-decoration: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+	float: left;
+	font-family: Raleway, sans-serif;
+	width: 60%;
+	background-color: rgba(255,255,255,0.1); /* Green */
+    border: 2px solid rgba(21,190,143,1.0);
+	-webkit-box-shadow: 
+		inset 0 0 4px rgba(0,0,0,0.1),
+			  0 0 8px rgba(0,0,0,0.1);
+	-moz-box-shadow: 
+		inset 0 0 4px rgba(0,0,0,0.1),
+			  0 0 8px rgba(0,0,0,0.1);
+	box-shadow: 
+		inset 0 0 4px rgba(0,0,0,0.1),
+			  0 0 8px rgba(0,0,0,0.1);
+    color: white;
+    padding-left: 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+

@@ -1,0 +1,69 @@
+/* box shadows, transitions, and other non-essential CSS stuffs */
+
+header {
+    -webkit-box-shadow: 15px 0px 15px 0px rgba(25,57,89,0.97);
+    -moz-box-shadow: 15px 0px 15px 0px rgba(25,57,89,0.97);
+    box-shadow: 15px 0px 15px 0px rgba(25,57,89,0.97);
+}
+
+header ul li a i:hover, nav ul li a:hover, header ul li a i:focus, nav ul li a:focus, .displayImage {
+    color: rgba(255,255,255,1.0);
+    transition: all 0.5s ease;
+}
+
+@media only screen 
+    and (min-width : 601px) {
+		
+    #oneH1:hover, #twoH1:hover, #threeH1:hover, #fourH1:hover, #fiveH1:hover, #sixH1:hover, #sevenH1:hover, #oneH3:hover, #twoH3:hover, #threeH3:hover, #oneH5:hover, #twoH5:hover, #threeH5:hover, #fourH5:hover, #fiveH5:hover, #sixH5:hover, #sevenH5:hover, #eightH5:hover, #nineH5:hover, #tenH5:hover, #elevenH5:hover, #twelveH5:hover, #thirteenH5:hover, .resumeHR:hover {
+        -moz-tranform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+        -o-transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+		
+    }
+		
+    #backgroundSlide:hover {
+        -moz-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+        -o-transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    #twitterFeed {
+        -webkit-box-shadow: 15px 0px 15px 0px rgba(25,57,89,0.97);
+        -moz-box-shadow: 15px 0px 15px 0px rgba(25,57,89,0.97);
+        box-shadow: 15px 0px 15px 0px rgba(25,57,89,0.97);
+		-moz-opacity: 0.95;
+		-o-opacity: 0.95;
+        opacity: 0.95;
+    }
+
+    #backgroundSlide {
+        -webkit-box-shadow: -6px 0px 23px 0px rgba(25,57,89,0.97), 15px 0px 20px 0px rgba(25,57,89,0.97);
+        -moz-box-shadow: -6px 0px 23px 0px rgba(25,57,89,0.97), 15px 0px 20px 0px rgba(25,57,89,0.97);
+        box-shadow: -6px 0px 23px 0px rgba(25,57,89,0.97), 15px 0px 20px 0px rgba(25,57,89,0.97);
+		-moz-opacity: 0.9;
+		-o-opacity: 0.9;
+		opacity: 0.9;
+    }		
+		
+	#oneH1, #twoH1, #threeH1, #fourH1, #fiveH1, #sixH1, #sevenH1, #oneH3, #twoH3, #threeH3, #oneH5, #twoH5, #threeH5, #fourH5, #fiveH5, #sixH5, #sevenH5, #eightH5, #nineH5, #tenH5, #elevenH5, #twelveH5, #thirteenH5, .resumeHR, #footerDate, .whiteH3, .blueH3, .blueH5, .redH5, .whiteH5, .whiteH5contact, .whiteH5resume, .whiteH5table, .greenH5, .greenH1, .pinkH5, #skillsResume, form, legend, table, textarea, label, input, fieldset, #resumeHead1, #resumeHead2, #workExperience, #skillsShow, #footerTxt, #mainHeading, .moveH5, .formH5, .form2H5, #contactInfo, #reverse, strong, p, .classH5, a:link, a:visited, a:active, a:hover {
+		background: rgba(42,42,42,0.9);
+		background: transparent;
+		zoom: 1;
+	}
+}

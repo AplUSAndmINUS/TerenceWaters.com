@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="terrokkinit, terrokkinit.com, AplUSAndmINUS, terencewaters.com, home page, graphic design,website, portfolio, web design, jQuery, JavaScript, HTML5, CSS3, W3, blog, personal blog, Twitter, social media, student, Terence,Waters, Terence Waters, coding, programming, programmer"
+    />
+    <meta name="description" content="Home page of Terence Waters, freelance graphic designer web site designer, programmer, and tech guru geek. Come check out his new blog, portfolio pages and design work, and get an insight into this person at terencewaters.com"
+    />
+    <title>Portfolio | TerenceWaters.com</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css" />
+    <link href="_css/base.css" rel="stylesheet" type="text/css" />
+    <link href="_css/effects.css" rel="stylesheet" type="text/css" />
+        <link href="_css/layout.css" rel="stylesheet" media="screen and (min-width: 768px)" type="text/css" />
+        <link href="_css/layout-mobile.css" rel="stylesheet" media="screen and (max-width: 767px)" type="text/css" />
+    <link href="_css/embedBehance.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="_js/jquery.easing.js"></script>
+    <script src="https://use.fontawesome.com/b8fd316b98.js"></script>
+    <script src="_js/embedBehance.js"></script>
+    <script>
+        if (window.jQuery) {
+            $(document).ready(function () {
+
+                var twitterDisplay = false;
+
+                $("#twitterImage").click(function () {
+                    if (twitterDisplay == false) {
+                        $("#twitterImage").animate({
+                            'top': "+=410px"
+                        }, 500);
+                        twitterDisplay = true;
+                    } else {
+                        $("#twitterImage").animate({
+                            'top': "-=410px"
+                        }, 500);
+                        twitterDisplay = false;
+                    }
+                    $("#twitterContent").slideToggle(500);
+                });
+
+                // work with these effects to make a smooth transition in
+                // the data will still display normally if JavaScript is disabled
+                var twitter = document.getElementById("twitterContent");
+                var today = new Date();
+                var months = ['january', 'february', 'march', 'april', 'may', 'june',
+                    'july', 'august', 'september', 'october', 'november', 'december'];
+                var month = today.getMonth();
+                var year = today.getFullYear();
+                var currentMonth = months[month];
+                var date = currentMonth + " " + year;
+
+                $("#footerDate").text(date);
+
+                $('#portfolio').embedBehance({
+                    // behance API Key
+                    apiKey: 'emdxyLtMTfnPvp1rW4tRCgeyYBJYDNm3',
+                    // Behance Username
+                    userName: 'AplUSAndmINUS',
+                    animationDuration: 1000,
+                    animationEasing: 'easeInOutExpo'
+                });
+            }); // end document.ready
+        };
+    </script>
+    <!--[if lt IE 8]>
+            <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js" type="text/javascript"></script>
+        <![endif]-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="mainNav">
+                <li><a href="index.html"><i class="fa fa-home fa-2x"></i><b>HOME</b></a></li>
+				<li><a href="resume.html"><i class="fa fa-user-o fa-2x"></i><b>RESUME</b></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open-o fa-2x"></i><b>PORTFOLIO</b></a></li>
+                <li><a href="http://www.aplusandminus.com/" target="new"><i class="fa fa-pencil fa-2x"></i><b>BLOG</b></a></li>
+                <li><a href="contact.php"><i class="fa fa-envelope-o fa-2x"></i><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <ul id="socialMedia">
+            <li><a href="http://www.facebook.com/AplUSAndmINUS" target="new"><i class="fa fa-facebook fa-2x"></i><b>FACEBOOK</b></a></li>
+            <li><a href="http://www.twitter.com/AplUSAndmINUS" target="new"><i class="fa fa-twitter fa-2x"></i><b>TWITTER</b></a></li>
+            <li><a href="http://www.instagram.com/AplUSAndmINUS" target="new"><i class="fa fa-instagram fa-2x"></i><b>INSTAGRAM</b></a></li>
+            <li><a href="http://www.behance.net/AplUSAndmINUS" target="new"><i class="fa fa-behance fa-2x"></i><b>BEHANCE</b></a></li>
+			<li><a href="http://www.linkedin.com/in/terencewaters" target="new"><i class="fa fa-linkedin fa-2x"></i><b>LINKEDIN</b></a></li>
+        </ul>
+        <div id="logo">
+            <p id="logoImage">
+                <a href="about.html"><img src="_images/ETASlogo.png" class="logoImageGlow" alt="EnTerActive Studios - About (Easter Egg)" /></a>
+            </p>
+        </div>
+    </header>
+    <section id="portfolioBackground">
+        <div id="portfolio">
+            <div id="twitterFeed">
+                <div id="twitterFeedImage">
+                    <p>
+                        <img id="twitterImage" src="_images/myTwitterFeed.png" alt="See my 
+                    live Twitter feed @AplUSAndmINUS" />
+                    </p>
+                </div>
+                <div id="twitterContent">
+                    <!-- code goes here for Twitter feed -->
+                    <a class="twitter-timeline" data-lang="en" data-width="600" data-height="400" data-theme="dark" data-link-color="2B7BB9"
+                        href="https://twitter.com/AplUSAndmINUS">Tweets by @AplUSAndmINUS</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

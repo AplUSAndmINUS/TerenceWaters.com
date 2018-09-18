@@ -1,0 +1,398 @@
+
+@media only screen 
+	and (orientation: landscape) {
+	
+	#twitterFeed, #logo, #backdrop, header, #mainNav, #socialMedia, #aboutBackground, #contactBackground, #portfolioBackground, #portfolio, #resumeBackground, #backgroundSlide, #imageBackground, #ratesButton {
+		display: none;
+	}
+		
+	body {
+  		position: fixed;
+ 		top: 0;
+  		left: 0;
+  		height: 100%;
+  		width: 100%;
+  		display: block;
+		background-color: rgba(33,33,32,1.0);
+		background-image: url("../_images/deviceLandscape.png");
+		background-repeat: no-repeat;
+  		background-size: 100%;
+    }
+}
+
+@media only screen 
+    and (orientation: portrait) {
+		
+	body * {
+		background: rgba(33,33,32,0.0);	
+	}
+    
+	h1.id, #mobileLandscape, #twitterFeed, #logo, #ratesButton {
+        display: none;
+    }
+		
+    #backdrop {
+        background-color: rgba(0,0,0,0.2);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+		-moz-opacity: 0.9;
+		-o-opacity: 0.9;
+		opacity: 0.9;
+    }
+
+    header {
+        background-color: rgba(21,59,87,1.0);
+        width: 100%;
+        height: 50px;
+        border: 7px 0px 0px 0px solid rgba(45,118,170,1.0);
+    }
+
+    #mainNav {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(21,59,87,1.0);
+        display: block;
+        float: left;
+        text-align: center;
+    }
+
+    header nav ul li {
+        float: left;
+        width: 20%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 0;
+        border: 0;
+    }
+		
+	#resumeHead1 {
+		margin-bottom: -20px;	
+	}
+
+    #socialMedia {
+        position: fixed;
+        z-index: 998;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        padding: 5px 0;
+        margin: 0;                
+        list-style-type: none;
+        text-align: center;
+        border-top: 2px solid rgb(65,117,155,1.0);
+        background-color: rgba(21,59,87,1.0);
+    }
+
+    header ul li {
+        background-color: rgba(21,59,87,1.0);
+        padding: 5px 0px;
+        float: left;
+        width: 20%;
+        margin: 0 auto;
+        border: 0;
+    }
+
+    header ul li a {
+        background-color: rgba(21,59,87,1.0);
+    }
+
+    header ul li a i, nav ul li a i {
+        background-color: rgba(21,59,87,1.0);
+        display: inline;
+        color: rgba(158,222,238,0.445);
+    }
+		
+	header li b, nav li b {
+		display: none;
+	}
+
+    #imageBackground {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+		width: 100%;
+		width: 100vw;
+        height: 50vh;
+		z-index: -1;
+        background: url("../_images/bkPortraitMobile_901x896.jpg");
+        background-size: cover;
+    }
+
+    #contactBackground {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: -2;
+		width: 100%;
+        width: 100vw;
+		height: 60%;
+        height: 60vh;
+        background: url("../_images/bkPencilsMobile_900x900.jpg");
+        background-size: cover;
+    }
+
+    #aboutBackground {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: -2;
+		width: 100%;
+        width: 100vw;
+		height: 60%;
+        height: 60vh;
+        background-size: cover;
+    }
+
+    #portfolio {
+        margin-top: 35px;
+		width: 95%;
+        width: 95vw;
+        height: auto;
+        background-color: rgba(22,22,22,1.0);
+        overflow: auto;
+    }
+
+    #portfolioBackground {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        z-index: -2;
+        width: 100%;
+		width: 100vw;
+        height: auto;
+        background-color: rgba(22,22,22,1.0);
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #resumeBackground {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: -2;
+		width: 100%;
+        width: 100vw;
+		height: 40%;
+        height: 40vh;
+        background: url("../_images/bkAboutMobile_1280x720.jpg");
+        background-size: cover;
+    }
+
+    #backgroundSlide {
+        position: absolute;
+        top: 57%;
+        left: 0;
+        right: 0;
+        z-index: 2;
+		width: 100%;
+        width: 100vw;
+        height: auto;
+        vertical-align: center;
+        background: rgba(11,11,10,1.0);
+    }
+
+    .wrap-project {
+        width: 90%;
+    }
+
+    .wrap-title {
+        margin-left: 2%;
+    }
+
+    .eb-pagination-button {
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .eb-pagination-button > span {
+        background-color: #2183ee;
+    }
+    
+    h1 {
+        margin: 6% 0 0 10%;
+    }
+    
+    h3:last-of-type {
+        margin-bottom: 5%;
+    }
+
+    h3 {
+        margin-left: 14%;
+        padding: 0;
+    }
+   
+    h5 {
+        margin: 0 0 5% 10%;
+		line-height: 1.2;
+    }
+
+    h5:last-of-type {
+        margin-bottom: 15%;
+    }
+
+    table {
+        width: 80vw;
+        margin: 7% 0 0 10%;
+    }
+
+    .greenH1 {
+        font-family: Raleway, sans-serif;
+        font-size: 9.5em;
+        font-size: 9.5vw;
+        color: rgba(21,190,143,1.0);
+        line-height: 1.2em;
+        text-decoration: 100;
+    }
+
+    .whiteH3 {
+        font-family: Raleway, sans-serif;
+        font-size: 5.5em;
+        font-size: 5.5vw;
+        color: rgba(255,255,255,1.0);
+        line-height: 1.1em;
+        text-decoration: 600;
+    }
+
+    .blueH3 {
+        font-family: Raleway, sans-serif;
+        font-size: 5.5em;
+        font-size: 5.5vw;
+        color: rgba(49,116,170,1.0);
+        line-height: 1.1em;
+        text-decoration: 300;
+    }
+
+    .greenH3 {
+        font-family: Raleway, sans-serif;
+        font-size: 5.5em;
+        font-size: 5.5vw;
+        color: rgba(21,190,143,1.0);
+        line-height: 1.1em;
+        text-decoration: 600;
+    }
+
+    .whiteH5 {
+        font-family: Raleway, sans-serif;
+        font-size: 3.7em;
+        font-size: 3.7vw;
+        color: rgba(255,255,255,0.8);
+        line-height: 1.1;
+        text-decoration: 400;
+    }   
+
+    .pinkH5 {
+        font-family: Raleway, sans-serif;
+        font-size: 3.7em;
+        font-size: 3.7vw;
+        color: rgba(249,116,170,1.0);
+        line-height: 1.1;
+        text-decoration: 400;
+    }
+
+    .greenH5 {
+        font-family: Raleway, sans-serif;
+        font-size: 3.7em;
+        font-size: 3.7vw;
+        color: rgba(21,190,143,1.0);
+        line-height: 1.1em;
+        text-decoration: 400;
+    }
+		
+    .blueH5 {
+        font-family: Raleway, sans-serif;
+        font-size: 3.7em;
+        font-size: 3.7vw;
+        color: rgba(17,52,207,1.0);
+        line-height: 1.1em;
+        text-decoration: 400;
+    }
+
+    .redH5 {
+        font-family: Raleway, sans-serif;
+        font-size: 3.7em;
+        font-size: 3.7vw;
+        color: rgba(190,21,35,1.0);
+        line-height: 1.1em;
+        text-decoration: 400;
+    }
+    .rightH5 {
+        text-align: right;
+    }
+
+    .whiteH5resume {
+        font-family: Raleway, sans-serif;
+        font-size: 3.7em;
+        font-size: 3.7vw;
+        color: rgba(255,255,255,0.8);
+        line-height: 1.1;
+        text-decoration: 400;
+        margin: 2% 0 0 10%;
+    }
+
+    .whiteH5contact {
+        font-family: Raleway, sans-serif;
+        font-size: 3.7em;
+        font-size: 3.7vw;
+        color: rgba(255,255,255,0.8);
+        line-height: 1.1;
+        text-decoration: 400;
+        margin: 2% 0 20px 10%;
+    }
+
+    .whiteH5table {
+        font-family: Raleway, sans-serif;
+        font-size: 3.7em;
+        font-size: 3.7vw;
+        color: rgba(255,255,255,0.8);
+        line-height: 1.1;
+        text-decoration: 400;
+        width: 80vw;
+    }
+
+    .whiteH5resume a, .whiteH5 a {
+        text-decoration: underline;
+    }
+
+    .whiteH5resume:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    #reverse {
+        unicode-bidi: bidi-override; 
+        direction: rtl;
+    }
+
+    .eb-pagination-button > span {
+        background-color: #2183ee;
+    }
+		
+	.resumeHR {
+		color: rgba(49,116,170,1.0);
+		border: 0;
+		height: 2px;
+		background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(49,116,170,0.75), rgba(0,0,0,0));
+		margin-left: 5%;
+	}
+}
